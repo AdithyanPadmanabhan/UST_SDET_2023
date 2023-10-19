@@ -52,7 +52,7 @@ switch(x)
 
 
 }*/
-
+/*
 using Basic_Programs;
 
 Electricity electricity = new Electricity(1234, 9000, 9300, "amal");
@@ -62,8 +62,21 @@ Console.WriteLine(electricity.currentReading);
 Console.WriteLine("Consumer name:" + " " + electricity.consumerName);
 Electricity electricity1 = new Electricity(45634, 9000, 9400, "vimal");
 Console.WriteLine(electricity1.CalculateBill());
+*/
+
+using Basic_Programs;
+/*
+Employee employee = new(111, "Adhi", "HR", 50000);
+Console.WriteLine(" Employee ID: {0}\n Name :{1} \n Department :{2} \n Basic Pay : {3}\n", employee.Eid, employee.Name, employee.Department,
+    employee.BasicPay);
+Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
+*/
 
 
+ArrayExample example = new ArrayExample();
+//example.Onedimension();
+//example.Twodimension();
+example.Jaggered();
 
 
 
