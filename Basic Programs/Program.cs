@@ -72,11 +72,100 @@ Console.WriteLine(" Employee ID: {0}\n Name :{1} \n Department :{2} \n Basic Pay
 Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 */
 
-
-ArrayExample example = new ArrayExample();
+//ArrayExample example = new ArrayExample();
 //example.Onedimension();
 //example.Twodimension();
-example.Jaggered();
+//example.Jaggered();
+//StudentMarks marks = new(121, "amal", "Kochi", 98, 97, 100,0,0.0);
+//StudentMarks marks = new ();
+//marks.RollNo = 1;
+//marks.StudentName = "Test";
+//marks.Mark1 = 100;
+//marks.Mark2 = 97;
+//marks.Mark3 = 78;
+
+//marks.DisplayStudentDetails();
+//Console.WriteLine("Average: "+marks.CalculateAverage());
+//Console.WriteLine("Total: "+marks.CalculateTotal());
+
+//StudentGrade grade = new();
+
+//grade.RollNo = 1;
+//grade.StudentName = "Test";
+//grade.Mark1 = 100;
+//grade.Mark2 = 97;
+//grade.Mark3 = 78;
+
+
+//grade.CalculateGrade();
+//Console.WriteLine("Grade: " + grade.CalculateGrade());
+//Console.WriteLine("Average: " + grade.CalculateAverage());
+//Console.WriteLine("Total: " + grade.CalculateTotal());
+
+// hierachy inheritence
+
+//Console.WriteLine("1. TS 2. NTS 3. S");
+//switch (Convert.ToInt32(Console.ReadLine()))
+//{
+
+//    case 1:
+//        TeachingStaff ts = new TeachingStaff();
+//        ts.StaffId = 111;
+//        ts.Name = "asasr";
+//        ts.Depat = "IT";
+//        ts.Sem = 4;
+//        ts.Specialization = "EEE";
+//        ts.DisplayStaffDetails();
+
+//        ts.DisplayTSStaffDetails();
+//        break;
+
+//    case 2:
+//        NonTeachinStaff nts= new NonTeachinStaff();
+//        nts.StaffId = 121;
+//       nts.Name = "fasasr";
+//        nts.Depat = "HR";
+//        nts.Respnsibilities = "manager";
+//       nts.Experience = 5;
+//        nts.DisplayNTStaffDetails();
+//        nts.DisplayStaffDetails();
+//        break;
+//        case 3: 
+//        StudentDetails s = new StudentDetails();
+//        s.StudentName = "Adhi";
+//        s.City = "Tvm";
+//        s.CollegeId = 1;
+//        s.CollegeName = "Cusat";
+//        s.DisplayStudentDetails();
+//        s.DisplayCollegeDetails();
+//        break;
+
+ //}
+ //
+
+ EV ev =new EV();
+ev.VehicleNumber = 1234;
+ev.BrandName = "Honda";
+ev.Model = "2019";
+ev.Display();
+Console.WriteLine(ev.setTypeForVehicle());
+
+
+
+PetrolVehicle pv = new PetrolVehicle();
+pv.VehicleNumber = 369;
+pv.BrandName = "Honda Petrol";
+pv.Model = "2023";
+pv.Display();
+Console.WriteLine(pv.setTypeForVehicle());
+
+
+
+
+
+
+
+
 
 
 
