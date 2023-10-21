@@ -143,21 +143,33 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
  //}
  //
 
- EV ev =new EV();
-ev.VehicleNumber = 1234;
-ev.BrandName = "Honda";
-ev.Model = "2019";
-ev.Display();
-Console.WriteLine(ev.setTypeForVehicle());
+// EV ev =new EV();
+//ev.VehicleNumber = 1234;
+//ev.BrandName = "Honda";
+//ev.Model = "2019";
+//ev.Display();
+//Console.WriteLine(ev.setTypeForVehicle());
 
 
 
-PetrolVehicle pv = new PetrolVehicle();
-pv.VehicleNumber = 369;
-pv.BrandName = "Honda Petrol";
-pv.Model = "2023";
-pv.Display();
-Console.WriteLine(pv.setTypeForVehicle());
+//PetrolVehicle pv = new PetrolVehicle();
+//pv.VehicleNumber = 369;
+//pv.BrandName = "Honda Petrol";
+//pv.Model = "2023";
+//pv.Display();
+//Console.WriteLine(pv.setTypeForVehicle());
+
+
+//21-10-23
+//interface
+
+Doctor doctor = new Doctor();
+doctor.AddNewDoctor(123,"saho");
+doctor.DisplayDoctorDetails();
+doctor.ModifyDoctor(456,"Samar");
+doctor.DisplayDoctorDetails();
+doctor.BookApp(765, "vasu");
+doctor.DelApp("vasu");
 
 
 

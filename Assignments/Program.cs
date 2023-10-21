@@ -63,6 +63,7 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 
 
 Console.WriteLine("1. Electronic Product 2. Digital Product 3. Clothing Product");
+
 switch (Convert.ToInt32(Console.ReadLine()))
 {
 
