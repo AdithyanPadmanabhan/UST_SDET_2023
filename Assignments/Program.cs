@@ -62,34 +62,55 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 
 
 
-Console.WriteLine("1. Electronic Product 2. Digital Product 3. Clothing Product");
+//Console.WriteLine("1. Electronic Product 2. Digital Product 3. Clothing Product");
 
-switch (Convert.ToInt32(Console.ReadLine()))
-{
+//switch (Convert.ToInt32(Console.ReadLine()))
+//{
 
-    case 1:
-        ElectronicProduct ep = new(2, "Apple", 25000, 1);
-        ep.DisplayProduct();
-        ep.DisplayWarrantyPeriod();
-        break;
+//    case 1:
+//        ElectronicProduct ep = new(2, "Apple", 25000, 1);
+//        ep.DisplayProduct();
+//        ep.DisplayWarrantyPeriod();
+//        break;
 
-        case 2:
-        DigitalProduct dp = new DigitalProduct("PDF", 2, "S23 Ultra", 50000, 1);
-        dp.DisplayProduct();
-        dp.DisplayWarrantyPeriod();
-        dp.DisplayDigitalProduct();
-        break;
-        case 3:
-        ClothingProduct cp = new("Large", "Shirt", 1000, 2);
-        cp.DisplayProduct();
-        cp.DisplayClothingProduct();
-        break;
-
-
+//        case 2:
+//        DigitalProduct dp = new DigitalProduct("PDF", 2, "S23 Ultra", 50000, 1);
+//        dp.DisplayProduct();
+//        dp.DisplayWarrantyPeriod();
+//        dp.DisplayDigitalProduct();
+//        break;
+//        case 3:
+//        ClothingProduct cp = new("Large", "Shirt", 1000, 2);
+//        cp.DisplayProduct();
+//        cp.DisplayClothingProduct();
+//        break;
 
 
 
-}
+
+
+//}
+//Assignment 23-10-23
+
+//Employee employee = new("Adithyan","Padmanabhan",14,1);
+//employee.DisplayInfo();
+
+
+
+
+Circle circle = new() ;
+circle.Radius = 10;
+
+Rectangle rectangle = new();
+rectangle.Width = 10;
+rectangle.Length = 10;
+
+circle.Draw();
+rectangle.Draw();
+
+
+
+
 
 
 

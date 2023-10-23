@@ -140,8 +140,8 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 //        s.DisplayCollegeDetails();
 //        break;
 
- //}
- //
+//}
+//
 
 // EV ev =new EV();
 //ev.VehicleNumber = 1234;
@@ -163,13 +163,64 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 //21-10-23
 //interface
 
-Doctor doctor = new Doctor();
-doctor.AddNewDoctor(123,"saho");
-doctor.DisplayDoctorDetails();
-doctor.ModifyDoctor(456,"Samar");
-doctor.DisplayDoctorDetails();
-doctor.BookApp(765, "vasu");
-doctor.DelApp("vasu");
+//Doctor doctor = new Doctor();
+//doctor.AddNewDoctor(123,"saho");
+//doctor.DisplayDoctorDetails();
+//doctor.ModifyDoctor(456,"Samar");
+//doctor.DisplayDoctorDetails();
+//doctor.BookApp(765, "vasu");
+//doctor.DelApp("vasu");
+
+//polymorphism with overloading and overriding
+//BankDetails bank = new(1234, 1234456777, "hari", "Inactive");
+
+BankDetailsNew bank4 = new(1738,1000000,"VYshnav");
+bank4.WelcomeMessage();//overriding
+
+//BankDetails bank2 = new();
+//BankDetails bank3 = new(789,7890,"Adhi");
+Console.WriteLine("1.cust id 2.accnumb 3.name");
+int ch = Convert.ToInt32(Console.ReadLine());
+switch (ch)
+{
+    case 1:
+        Console.WriteLine("Custid : ");
+
+        bank4.GetAccountDetails(Convert.ToInt32(Console.ReadLine()));
+        break;
+    case 2:
+
+        Console.WriteLine("AccNum : ");
+        bank4.GetAccountDetails(Convert.ToInt64(Console.ReadLine()));
+        break;
+    case 3:
+        Console.WriteLine("Name: ");
+        bank4.GetAccountDetails(Console.ReadLine());
+        break;
+    default:
+        Console.WriteLine("Enter between 1-3");
+        break;
+
+
+
+}
+BankDetails.ExitMessge();
+
+
+
+
+// overriding
+
+
+
+
+
+
+
+
+
+
+
 
 
 
