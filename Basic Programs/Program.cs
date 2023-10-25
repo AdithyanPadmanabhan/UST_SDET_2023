@@ -174,43 +174,58 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 //polymorphism with overloading and overriding
 //BankDetails bank = new(1234, 1234456777, "hari", "Inactive");
 
-BankDetailsNew bank4 = new(1738,1000000,"VYshnav");
-bank4.WelcomeMessage();//overriding
+//BankDetailsNew bank4 = new(1738,1000000,"VYshnav");
+//bank4.WelcomeMessage();//overriding
 
 //BankDetails bank2 = new();
 //BankDetails bank3 = new(789,7890,"Adhi");
-Console.WriteLine("1.cust id 2.accnumb 3.name");
-int ch = Convert.ToInt32(Console.ReadLine());
-switch (ch)
-{
-    case 1:
-        Console.WriteLine("Custid : ");
+//Console.WriteLine("1.cust id 2.accnumb 3.name");
+//int ch = Convert.ToInt32(Console.ReadLine());
+//switch (ch)
+//{
+//    case 1:
+//        Console.WriteLine("Custid : ");
 
-        bank4.GetAccountDetails(Convert.ToInt32(Console.ReadLine()));
-        break;
-    case 2:
+//        bank4.GetAccountDetails(Convert.ToInt32(Console.ReadLine()));
+//        break;
+//    case 2:
 
-        Console.WriteLine("AccNum : ");
-        bank4.GetAccountDetails(Convert.ToInt64(Console.ReadLine()));
-        break;
-    case 3:
-        Console.WriteLine("Name: ");
-        bank4.GetAccountDetails(Console.ReadLine());
-        break;
-    default:
-        Console.WriteLine("Enter between 1-3");
-        break;
-
-
-
-}
-BankDetails.ExitMessge();
+//        Console.WriteLine("AccNum : ");
+//        bank4.GetAccountDetails(Convert.ToInt64(Console.ReadLine()));
+//        break;
+//    case 3:
+//        Console.WriteLine("Name: ");
+//        bank4.GetAccountDetails(Console.ReadLine());
+//        break;
+//    default:
+//        Console.WriteLine("Enter between 1-3");
+//        break;
 
 
 
+//}
+//BankDetails.ExitMessge();
 
-// overriding
 
+
+
+// 25-10-2023
+
+
+NonGenericCollectionsEX nGc = new NonGenericCollectionsEX();
+//nGc.ArraryListHandling();
+//nGc.StackHandling();
+//nGc.QueueHandling();
+//nGc.HashTableHandlingExample();
+//nGc.SortedListHandling();
+
+
+GenericCollectionEx genericCollectionEx = new GenericCollectionEx();
+//genericCollectionEx.ListHandling();
+//genericCollectionEx.StackHandling();
+//genericCollectionEx.QueueHandling();
+//genericCollectionEx.DictionaryHandlingExample();
+genericCollectionEx.SortedListHandling();
 
 
 

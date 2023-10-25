@@ -98,15 +98,33 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 
 
 
-Circle circle = new() ;
-circle.Radius = 10;
+//Circle circle = new() ;
+//circle.Radius = 10;
 
-Rectangle rectangle = new();
-rectangle.Width = 10;
-rectangle.Length = 10;
+//Rectangle rectangle = new();
+//rectangle.Width = 10;
+//rectangle.Length = 10;
 
-circle.Draw();
-rectangle.Draw();
+//circle.Draw();
+//rectangle.Draw();
+
+//Assigmnet -1 25-10-2023
+//InsurancePolicy insurancePolicy = new("Healthcare", 2001, 2000);
+//Console.WriteLine("Intial PremiumAmount:");
+
+//insurancePolicy.Display();
+//insurancePolicy.RenewPolicy(2050);
+//insurancePolicy.RenewPolicy();
+
+// Assignment -2 25-10-2023
+LifeInsurance lifeInsurance = new LifeInsurance("LIC",1,3500,23);
+Console.WriteLine("PremiumAmount of Life Insurance: {0}",lifeInsurance.CalculatePremium());
+
+
+CarInsurance carInsurance = new CarInsurance("Third Party", 2, 4500, "Heavy");
+Console.WriteLine("PremiumAmount of Car Insurance: {0}", carInsurance.CalculatePremium());
+
+
 
 
 
