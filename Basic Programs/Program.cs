@@ -65,10 +65,11 @@ Console.WriteLine(electricity1.CalculateBill());
 */
 
 using Basic_Programs;
+using Basic_Programs.ExceptionMessages;
 /*
 Employee employee = new(111, "Adhi", "HR", 50000);
 Console.WriteLine(" Employee ID: {0}\n Name :{1} \n Department :{2} \n Basic Pay : {3}\n", employee.Eid, employee.Name, employee.Department,
-    employee.BasicPay);
+employee.BasicPay);
 Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 */
 
@@ -212,7 +213,7 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 // 25-10-2023
 
 
-NonGenericCollectionsEX nGc = new NonGenericCollectionsEX();
+//NonGenericCollectionsEX nGc = new NonGenericCollectionsEX();
 //nGc.ArraryListHandling();
 //nGc.StackHandling();
 //nGc.QueueHandling();
@@ -220,15 +221,58 @@ NonGenericCollectionsEX nGc = new NonGenericCollectionsEX();
 //nGc.SortedListHandling();
 
 
-GenericCollectionEx genericCollectionEx = new GenericCollectionEx();
-//genericCollectionEx.ListHandling();
-//genericCollectionEx.StackHandling();
-//genericCollectionEx.QueueHandling();
-//genericCollectionEx.DictionaryHandlingExample();
-genericCollectionEx.SortedListHandling();
+//GenericCollectionEx genericCollectionEx = new GenericCollectionEx();
+////genericCollectionEx.ListHandling();
+////genericCollectionEx.StackHandling();
+////genericCollectionEx.QueueHandling();
+////genericCollectionEx.DictionaryHandlingExample();
+//genericCollectionEx.SortedListHandling();
+
+ExceptionhandlingEX ex = new(10, 101);
+try
+{
+    ex.Numcheck();
+}
+catch(Number1Exception exs)
+{
+    Console.WriteLine(exs.Message);
+
+}
+try
+{
+    ex.NumcheckTwo();
+}
+catch (Number2Exception exs)
+{
+    Console.WriteLine(exs.Message);
+
+}
+
+//try
+//{
+//    ex.Divide();
+
+catch (ArithmeticException exs)
+{
+    Console.WriteLine(MyExceptions.excepMeassage[0]);
 
 
-
+    //    Console.WriteLine(ex.Message);
+    //    Console.WriteLine(ex.StackTrace);
+    //    Console.WriteLine(ex.Source);
+}
+catch (IndexOutOfRangeException exs)
+{
+    Console.WriteLine(MyExceptions.excepMeassage[1]);
+}
+catch (Exception exs)
+{
+    Console.WriteLine(MyExceptions.excepMeassage[2]);
+}
+finally
+{
+    Console.WriteLine("Done");
+}
 
 
 
