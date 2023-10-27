@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,6 +41,57 @@ namespace Assignments
                 Console.WriteLine("Patient details added");
 
             }
+        }
+
+        public void CreateFile()
+        {
+            FileStream fs = new FileStream("D:\\Training Works\\Basic Programs\\Assignments\\PatientRecords\\PatientDetail.txt"
+                , FileMode.Create, FileAccess.Write);
+            fs.Close();
+        }
+        public void PatientsDetails(Patient patient)
+        {
+            FileInfo fi = new FileInfo("D:\\Training Works\\Basic Programs\\Assignments\\PatientRecords\\PatientDetail.txt");
+            if (!fi.Exists)
+            {
+                CreateFile();
+            }
+            else
+            {
+                patientsDetails.Add(patient);
+                Console.WriteLine("Patient details added");
+                FileStream fs = new FileStream("D:\\Training Works\\Basic Programs\\Assignments\\PatientRecords\\PatientDetail.txt"
+                   , FileMode.Append, FileAccess.Write);
+               
+               
+                StreamWriter sw = new StreamWriter(fs);
+                sw.Write(patient.PatientId + "\t");
+                sw.Write(patient.PatientName + "\t");
+
+                sw.Write(patient.Age + "\t");
+                sw.Write(patient.Diagnosis + "\t");
+                sw.Write(" ");
+                sw.Flush();
+                sw.Close();
+                fs.Close();
+            }
+           
+
+        }
+        public static void ViewDetails()
+        {
+            FileStream fs = new FileStream("D:\\Training Works\\Basic Programs\\Assignments\\PatientRecords\\PatientDetail.txt"
+                , FileMode.Open, FileAccess.Read);
+            StreamReader sr = new StreamReader(fs);
+            sr.BaseStream.Seek(0, SeekOrigin.Begin);
+            string? str = sr.ReadToEnd();
+            while (str != null)
+            {
+                Console.WriteLine(str);
+                str = sr.ReadLine();
+            }
+            sr.Close();
+            fs.Close();
         }
     }
 }

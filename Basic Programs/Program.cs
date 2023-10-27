@@ -275,13 +275,14 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 //}
 
 
-FileOperations fileOperations = new FileOperations();
+//FileOperations fileOperations = new FileOperations();
 //fileOperations.CreateFile();
 //fileOperations.WriteData();
 //fileOperations.ReadData();
 //fileOperations.CopyAndMoveFile();
 //fileOperations.Deletedata();
-fileOperations.FileProperties();
+//fileOperations.FileProperties();
+
 
 
 

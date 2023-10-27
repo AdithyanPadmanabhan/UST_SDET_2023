@@ -1,0 +1,5 @@
+192	Af	34	Cough	
+123	adhi	23	no
+456	amal	23	fever	
+197	esther	34	viral fever	
+1738	Sara	21	head ache	 

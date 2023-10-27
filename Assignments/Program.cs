@@ -1,6 +1,7 @@
 ﻿
 //assignment 18-10-2023
 using Assignments;
+using Assignments.ExceptionHandling;
 /*
 Student student = new Student("Amal", 26, 30, 45);
 Console.WriteLine("Average score of " + student.studentName + " " + "is" + " " + student.CalculateAverage());
@@ -191,7 +192,7 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 //        {
 //            Console.WriteLine("CallID: {0}\t CallTime: {1}",item.CallId,item.CallTime);
 //            break;
-           
+
 //        }
 //        else { Console.WriteLine("Phone Number not found");
 //            break;
@@ -232,15 +233,80 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 //}
 
 
-Patient patients = new(1,"",23,"Cold");
-try
-{
-    patients.AddPatient(patients);
-}
-catch(ArgumentException ex)
-{
-    Console.WriteLine(ex.Message);
-}
+//Patient patients = new(1,"",23,"Cold");
+//try
+//{
+//    patients.AddPatient(patients);
+//}
+//catch(ArgumentException ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+
+// assignment -1 27-10-2023
+
+//MedicalRecord medicalRecord = new(123, "Hari", 33, "Cold", 456, -1);
+//try
+//{
+//    medicalRecord.MedicalRecordDetails(medicalRecord);
+//}
+//catch(InvalidPatientDataException pd)
+//{
+//    Console.WriteLine(pd.Message);
+//}
+//catch(InvalidMedicalRecordException mr)
+//{
+//    Console.WriteLine(mr.Message);
+//}
+
+
+// assignment 2- 27-10-2023
+//int option, choice;
+//do
+//{
+//    Console.WriteLine("1.Add Patient \n 2. View Patient Details\n 3.Exit Order");
+//    Console.WriteLine("Choose option");
+//    choice = Convert.ToInt32(Console.ReadLine());
+
+//    switch (choice)
+//    {
+//        case 1:
+
+//            Console.WriteLine("Enter PatientID:");
+//            int id = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("Enter Patient Name:");
+//            string? name = Console.ReadLine();
+//            Console.WriteLine("Enter Age");
+//            int age = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("Enter diagnosis");
+//            string? diagnosis = Console.ReadLine();
+//            Patient patient = new(id, name, age, diagnosis);
+//            patient.PatientsDetails(patient);
+
+
+//            break;
+
+//        case 2:
+//            Patient.ViewDetails();
+//            break;
+
+//        case 3:
+//            Environment.Exit(0);
+//            break;
+//    }
+//    Console.WriteLine("Do You Want To Continue Press 1 for continue");
+//    option = Convert.ToInt32(Console.ReadLine());
+//} while (option == 1);
+
+
+// assignment -3 27-10-23
+
+
+   
+
+
+
+
 
 
 
