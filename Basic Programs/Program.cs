@@ -228,53 +228,60 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 ////genericCollectionEx.DictionaryHandlingExample();
 //genericCollectionEx.SortedListHandling();
 
-ExceptionhandlingEX ex = new(10, 101);
-try
-{
-    ex.Numcheck();
-}
-catch(Number1Exception exs)
-{
-    Console.WriteLine(exs.Message);
-
-}
-try
-{
-    ex.NumcheckTwo();
-}
-catch (Number2Exception exs)
-{
-    Console.WriteLine(exs.Message);
-
-}
-
+//ExceptionhandlingEX ex = new(10, 101);
 //try
 //{
-//    ex.Divide();
+//    ex.Numcheck();
+//}
+//catch(Number1Exception exs)
+//{
+//    Console.WriteLine(exs.Message);
 
-catch (ArithmeticException exs)
-{
-    Console.WriteLine(MyExceptions.excepMeassage[0]);
+//}
+//try
+//{
+//    ex.NumcheckTwo();
+//}
+//catch (Number2Exception exs)
+//{
+//    Console.WriteLine(exs.Message);
+
+//}
+
+////try
+////{
+////    ex.Divide();
+
+//catch (ArithmeticException exs)
+//{
+//    Console.WriteLine(MyExceptions.excepMeassage[0]);
 
 
-    //    Console.WriteLine(ex.Message);
-    //    Console.WriteLine(ex.StackTrace);
-    //    Console.WriteLine(ex.Source);
-}
-catch (IndexOutOfRangeException exs)
-{
-    Console.WriteLine(MyExceptions.excepMeassage[1]);
-}
-catch (Exception exs)
-{
-    Console.WriteLine(MyExceptions.excepMeassage[2]);
-}
-finally
-{
-    Console.WriteLine("Done");
-}
+//    //    Console.WriteLine(ex.Message);
+//    //    Console.WriteLine(ex.StackTrace);
+//    //    Console.WriteLine(ex.Source);
+//}
+//catch (IndexOutOfRangeException exs)
+//{
+//    Console.WriteLine(MyExceptions.excepMeassage[1]);
+//}
+//catch (Exception exs)
+//{
+//    Console.WriteLine(MyExceptions.excepMeassage[2]);
+//}
+//finally
+//{
+//    Console.WriteLine("Done");
+//}
 
 
+FileOperations fileOperations = new FileOperations();
+//fileOperations.CreateFile();
+//fileOperations.WriteData();
+//fileOperations.ReadData();
+//fileOperations.CopyAndMoveFile();
+//fileOperations.Deletedata();
+fileOperations.FileProperties();
 
 
 

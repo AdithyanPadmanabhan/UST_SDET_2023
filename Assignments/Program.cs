@@ -174,31 +174,31 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 // assignment -2 26-10-2023
 
 
-CallRecord callRecord1 = new(123, 1.5, 8921287202);
-CallRecord callRecord2 = new(456, 2.5, 8921287202);
-CallRecord callRecord3 = new(567, 3.5, 7202);
+//CallRecord callRecord1 = new(123, 1.5, 8921287202);
+//CallRecord callRecord2 = new(456, 2.5, 8921287202);
+//CallRecord callRecord3 = new(567, 3.5, 7202);
 
-List<CallRecord> callRecords = new()
-{
-    callRecord1, callRecord2, callRecord3
-};
+//List<CallRecord> callRecords = new()
+//{
+//    callRecord1, callRecord2, callRecord3
+//};
 
-void CallHistory(long phonumber)
-{
-    foreach (var item in callRecords)
-    {
-        if(item.PhoneNumber == phonumber)
-        {
-            Console.WriteLine("CallID: {0}\t CallTime: {1}",item.CallId,item.CallTime);
-            break;
+//void CallHistory(long phonumber)
+//{
+//    foreach (var item in callRecords)
+//    {
+//        if(item.PhoneNumber == phonumber)
+//        {
+//            Console.WriteLine("CallID: {0}\t CallTime: {1}",item.CallId,item.CallTime);
+//            break;
            
-        }
-        else { Console.WriteLine("Phone Number not found");
-            break;
-        }
-    }
+//        }
+//        else { Console.WriteLine("Phone Number not found");
+//            break;
+//        }
+//    }
 
-}
+//}
 
 //CallHistory(8921);
 
@@ -232,7 +232,7 @@ void CallHistory(long phonumber)
 //}
 
 
-Patient patients = new(1,"Amal",23,"Cold");
+Patient patients = new(1,"",23,"Cold");
 try
 {
     patients.AddPatient(patients);
