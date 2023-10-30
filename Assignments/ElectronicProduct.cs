@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Assignments
 {
-    internal class ElectronicProduct : Product
-    {
-        public ElectronicProduct(int warrantyPeriod, string? productName, double price, int quantity):base(productName,price,quantity)
-        {
-            WarrantyPeriod = warrantyPeriod;
-        }
+    //internal class ElectronicProduct : Product
+    //{
+    //    public ElectronicProduct(int warrantyPeriod, string? productName, double price, int quantity):base(productName,price,quantity)
+    //    {
+    //        WarrantyPeriod = warrantyPeriod;
+    //    }
 
-        public int WarrantyPeriod { get; set; }
+    //    public int WarrantyPeriod { get; set; }
 
-        public void DisplayWarrantyPeriod()
-        {
-            Console.WriteLine("Warranty Period: {0}", WarrantyPeriod);
-        }
+    //    public void DisplayWarrantyPeriod()
+    //    {
+    //        Console.WriteLine("Warranty Period: {0}", WarrantyPeriod);
+    //    }
 
-    }
+    //}
     
     
 }

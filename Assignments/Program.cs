@@ -342,11 +342,23 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 
 //Assignment -1 30-10-2023
 
-var typ1 = "single";
-var typ2 = 2;
-RoomReservation<string>.BookRoom(123, ref typ1);
-//RoomReservation<int>.BookRoom(101, ref typ2);
-RoomReservation<string>.CancelRoom(101);
+//var typ1 = "single";
+//var typ2 = 2;
+//RoomReservation<string>.BookRoom(123, ref typ1);
+////RoomReservation<int>.BookRoom(101, ref typ2);
+//RoomReservation<string>.CancelRoom(101);
+
+
+//assignment -2 -30-10-2023
+
+var typ1 = "MI";
+var typ2 = 1010;
+var typ3 = "OnePlus";
+Product<string>.AddProduct(1, ref typ1, 100, 2);
+Product<int>.AddProduct(2, ref typ2, 50, 3);
+Product<string>.UpdateProduct(1, typ3);
+Product<string>.DeleteProduct(2);
+Product<string>.SearchProduct(1);
 
 
 
