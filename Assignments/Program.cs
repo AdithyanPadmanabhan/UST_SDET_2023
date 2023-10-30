@@ -302,44 +302,51 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 // assignment -3 27-10-23
 
 
-MedicalHistory medicalHistory = new(123, 432, "Cold", "20-10-23");
+//MedicalHistory medicalHistory = new(123, 432, "Cold", "20-10-23");
 
-MedicalHistory medicalHistory1 = new(453, 1232, "Vomiting", "21-01-22");
+//MedicalHistory medicalHistory1 = new(453, 1232, "Vomiting", "21-01-22");
 
-MedicalHistory medicalHistory2 = new(6783, 332, "Heart Attack", "13-03-21");
-int option, choice;
-do
-{
-    
-    Console.WriteLine("1.Add Medical Details \n 2. View Patient Details\n 3.Exit Order");
-    Console.WriteLine("Choose option");
-    choice = Convert.ToInt32(Console.ReadLine());
+//MedicalHistory medicalHistory2 = new(6783, 332, "Heart Attack", "13-03-21");
+//int option, choice;
+//do
+//{
 
-    switch (choice)
-    {
-        case 1:
+//    Console.WriteLine("1.Add Medical Details \n 2. View Patient Details\n 3.Exit Order");
+//    Console.WriteLine("Choose option");
+//    choice = Convert.ToInt32(Console.ReadLine());
 
-            MedicalHistory.MedicalHistoryDetails(medicalHistory1);
-            MedicalHistory.MedicalHistoryDetails(medicalHistory2);
-            MedicalHistory.MedicalHistoryDetails(medicalHistory);
+//    switch (choice)
+//    {
+//        case 1:
 
-            break;
+//            MedicalHistory.MedicalHistoryDetails(medicalHistory1);
+//            MedicalHistory.MedicalHistoryDetails(medicalHistory2);
+//            MedicalHistory.MedicalHistoryDetails(medicalHistory);
 
-        case 2:
+//            break;
 
-
-            MedicalHistory.ViewDetails();
-            break;
-
-        case 3:
-            Environment.Exit(0);
-            break;
-    }
-    Console.WriteLine("Do You Want To Continue Press 1 for continue");
-    option = Convert.ToInt32(Console.ReadLine());
-} while (option == 1);
+//        case 2:
 
 
+//            MedicalHistory.ViewDetails();
+//            break;
+
+//        case 3:
+//            Environment.Exit(0);
+//            break;
+//    }
+//    Console.WriteLine("Do You Want To Continue Press 1 for continue");
+//    option = Convert.ToInt32(Console.ReadLine());
+//} while (option == 1);
+
+
+//Assignment -1 30-10-2023
+
+var typ1 = "single";
+var typ2 = 2;
+RoomReservation<string>.BookRoom(123, ref typ1);
+//RoomReservation<int>.BookRoom(101, ref typ2);
+RoomReservation<string>.CancelRoom(101);
 
 
 
