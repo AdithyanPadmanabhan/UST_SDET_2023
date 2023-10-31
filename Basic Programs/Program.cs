@@ -305,24 +305,59 @@ Console.WriteLine("Net pay : {0}", employee.CalculateSalary());
 
 //GenEX<int> ga = new GenEX<int>(new int[3] {1,2,3});
 //ga.Display();
-static void Swap<T>(ref T num1, ref T num2)
+//static void Swap<T>(ref T num1, ref T num2)
+//{
+//    T temp;
+//    temp = num1;
+//    num1 = num2;
+//    num2 = temp;
+
+//}
+//int n1 =10, n2 = 20;
+//char c1 = 'A', c2 = 'B';
+//Swap<int>(ref n1, ref n2);
+//Swap<char>(ref c1, ref c2);
+
+//Console.WriteLine("A = {0} B ={1}",n1,n2);
+//Console.WriteLine("c = {0} d ={1}", c1, c2);
+
+
+
+
+//31-10-2023
+
+public delegate void Del1();
+public delegate void Del2(string message);
+public delegate void Del3(int n1,int n2);
+public delegate int Del4(int n1, int n2);
+
+//declare the delegate
+class Program
 {
-    T temp;
-    temp = num1;
-    num1 = num2;
-    num2 = temp;
+    public static void Main(string[] args)
+    {
+        Del1 dobj1 = DelegateEx.MethodA; 
+        //bind target method
 
+        dobj1.Invoke();  //invoke
+
+
+       Del2 dobj2 = DelegateEx.MethodB;
+        dobj2.Invoke("Hi guys");
+
+        DelegateEx delEx = new();
+        Del3 dobj3 = delEx.Add;
+        Del3 dobj4 = delEx.Sub;
+        Del3 dobjall = dobj3 + dobj4;// multicasting
+
+
+        dobjall(10, 20);
+
+        //Del4 dobj4 = delEx.AddR;
+        //Console.WriteLine(dobjall(12, 13));
+
+    }
 }
-int n1 =10, n2 = 20;
-char c1 = 'A', c2 = 'B';
-Swap<int>(ref n1, ref n2);
-Swap<char>(ref c1, ref c2);
-
-Console.WriteLine("A = {0} B ={1}",n1,n2);
-Console.WriteLine("c = {0} d ={1}", c1, c2);
-
-
-
 
 
 

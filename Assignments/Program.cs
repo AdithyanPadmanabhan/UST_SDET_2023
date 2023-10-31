@@ -351,15 +351,70 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 
 //assignment -2 -30-10-2023
 
-var typ1 = "MI";
-var typ2 = 1010;
-var typ3 = "OnePlus";
-Product<string>.AddProduct(1, ref typ1, 100, 2);
-Product<int>.AddProduct(2, ref typ2, 50, 3);
-Product<string>.UpdateProduct(1, typ3);
-Product<string>.DeleteProduct(2);
-Product<string>.SearchProduct(1);
+//var typ1 = "MI";
+//var typ2 = 1010;
+//var typ3 = "OnePlus";
+//Product<string>.AddProduct(1, ref typ1, 100, 2);
+//Product<int>.AddProduct(2, ref typ2, 50, 3);
+//Product<string>.UpdateProduct(1, typ3);
+//Product<string>.DeleteProduct(2);
+//Product<string>.SearchProduct(1);
 
+//Assignments -1 -31-10-2023
+//public delegate double Emp1(double perfrate);
+
+//class Program
+//{
+//    public static void Main(string[] args)
+//    {
+//    repeat:
+//        Console.WriteLine("Enter Employee ID:");
+//        int id = Convert.ToInt32(Console.ReadLine());
+//        Console.WriteLine("Enter Employee Name:");
+//        string? name = Console.ReadLine();
+//        Employees employee = new();
+//        employee.EmployeeId = id;
+//        employee.Name = name;
+//        Console.WriteLine("Bonus Calculation Method:");
+//        Console.WriteLine("1. Performance Threshold 2. Department Specific Rules");
+//        string? choose = Console.ReadLine();
+//        if (choose == "1")
+//        {
+//            Emp1 emp1 = Employees.BonusCalculationOne;
+//            Console.WriteLine("Enter Performance Threshold:");
+//            Console.WriteLine(emp1.Invoke(Convert.ToDouble(Console.ReadLine())));
+//        }
+//        else if (choose == "2")
+//        {
+//            Emp1 emp1 = Employees.BonusCalculationTwo; 
+//            Console.WriteLine("Enter Department Specific Rule Rate:");
+//            Console.WriteLine(emp1.Invoke(Convert.ToDouble(Console.ReadLine())));
+//        }
+//        Console.WriteLine("Do you want to continue? (y/n)");
+//        string? titleread = Console.ReadLine();
+//        if (titleread == "y")
+//        {
+//            goto repeat;
+//        }
+//    }
+//}
+public delegate void Hotels();
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+
+        HotelEvent hotelEvent = new HotelEvent("haloween", DateOnly.Parse("31-10-23"), "kochi", 500);
+        HotelEvent hotelEvent1 = new HotelEvent("Birthday Party", DateOnly.Parse("29-10-23"), "Trivandrum", 400);
+        HotelEvent.AddEvent(hotelEvent);
+        HotelEvent.AddEvent(hotelEvent1);
+        Hotels hotelevent2 = HotelEvent.RegisterEvent;
+        Hotels hotelevent3 = HotelEvent.Statusreg;
+        Hotels objall = hotelevent2 + hotelevent3;
+        objall.Invoke();
+    }
+}
 
 
 
