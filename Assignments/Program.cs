@@ -398,23 +398,38 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 //        }
 //    }
 //}
-public delegate void Hotels();
+//public delegate void Hotels();
 
-class Program
-{
-    public static void Main(string[] args)
-    {
+//class Program
+//{
+//    public static void Main(string[] args)
+//    {
 
-        HotelEvent hotelEvent = new HotelEvent("haloween", DateOnly.Parse("31-10-23"), "kochi", 500);
-        HotelEvent hotelEvent1 = new HotelEvent("Birthday Party", DateOnly.Parse("29-10-23"), "Trivandrum", 400);
-        HotelEvent.AddEvent(hotelEvent);
-        HotelEvent.AddEvent(hotelEvent1);
-        Hotels hotelevent2 = HotelEvent.RegisterEvent;
-        Hotels hotelevent3 = HotelEvent.Statusreg;
-        Hotels objall = hotelevent2 + hotelevent3;
-        objall.Invoke();
-    }
-}
+//        HotelEvent hotelEvent = new HotelEvent("haloween", DateOnly.Parse("31-10-23"), "kochi", 500);
+//        HotelEvent hotelEvent1 = new HotelEvent("Birthday Party", DateOnly.Parse("29-10-23"), "Trivandrum", 400);
+//        HotelEvent.AddEvent(hotelEvent);
+//        HotelEvent.AddEvent(hotelEvent1);
+//        Hotels hotelevent2 = HotelEvent.RegisterEvent;
+//        Hotels hotelevent3 = HotelEvent.Statusreg;
+//        Hotels objall = hotelevent2 + hotelevent3;
+//        objall.Invoke();
+//    }
+//}
+
+
+//assignment -1 - 1-11-2023
+
+//TourismDestination.touristList.Add(new TourismDestination("TajMahal", "India", 5));
+//TourismDestination.touristList.Add(new TourismDestination("Zuzi", "Pattaya", 2.5));
+//TourismDestination.touristList.Add(new TourismDestination("RedFort", "Mumbai", 1.5));
+//TourismDestination.touristList.Add(new TourismDestination("WhiteFort", "USA",3.5));
+//TourismDestination.touristList.Add(new TourismDestination("Hari Tower", "Uganda", 2));
+//TourismDestination.SortBy();
+
+TouristDestination.TouristDest();
+
+
+
 
 
 
