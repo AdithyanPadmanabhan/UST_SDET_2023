@@ -426,8 +426,50 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 //TourismDestination.touristList.Add(new TourismDestination("Hari Tower", "Uganda", 2));
 //TourismDestination.SortBy();
 
-TouristDestination.TouristDest();
+//TouristDestination.TouristDest();
 
+
+//assignment -1 02-11-2023
+
+//    Hotel hotel1 = new Hotel("Tajmahal", "India", 3.5, 5, "Thamara");
+
+//    Hotel hotel2 = new Hotel("Burkhalifa", "Dubai", 2.5, 10, "Novotel");
+
+
+//    Console.WriteLine("Available rooms at Hotel{0} is {1}",hotel1.Hotelname,hotel1.AvailableRooms);
+//    Console.WriteLine("Available rooms at Hotel{0} is {1}", hotel2.Hotelname, hotel2.AvailableRooms);
+//    await HotelBooking(hotel1,3);
+//    await HotelBooking(hotel2, 4);
+
+
+//    Console.WriteLine("Available rooms at Hotel{0} is {1}", hotel1.Hotelname, hotel1.AvailableRooms);
+//    Console.WriteLine("Available rooms at Hotel{0} is {1}", hotel2.Hotelname, hotel2.AvailableRooms);
+
+
+//static async Task  HotelBooking(Hotel hotel, int reqrooms)
+//{
+//    await hotel.HotelBooK(reqrooms);
+//}
+
+//Assignment -2 ---02-11-2023
+
+
+TourPackage package = new TourPackage(1, "Wayanad", "02-11-2025", 1300);
+TourPackage package1 = new TourPackage(2, "Ernakulam", "12-1-2024", 1400);
+TourPackage package2 = new TourPackage(3, "kannur", "12-12-2023", 1500);
+
+TourPackage.tourPackages.Add(package1);
+TourPackage.tourPackages.Add(package2);
+TourPackage.tourPackages.Add(package);
+
+
+Thread thread = new Thread(TourPackage.HotelReservation);
+
+Thread thread1 = new Thread(TourPackage.HotelReservation);
+
+thread.Start();
+thread.Join();
+thread1.Start();
 
 
 
