@@ -474,37 +474,56 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 
 
 //Assignment -1 03-11-2023
-TaskItem ts = new TaskItem(1, "Birthday", false);
-TaskItem ts1 = new TaskItem(2, "Game", true);
-TaskItem ts2 = new TaskItem(3, "gym", true);
-TaskItem ts3 = new TaskItem(4, "work", false);
+//TaskItem ts = new TaskItem(1, "Birthday", false);
+//TaskItem ts1 = new TaskItem(2, "Game", true);
+//TaskItem ts2 = new TaskItem(3, "gym", true);
+//TaskItem ts3 = new TaskItem(4, "work", false);
 
-TaskItem.TaskItems.Add(ts);
-TaskItem.TaskItems.Add(ts1);
-TaskItem.TaskItems.Add(ts2);
-TaskItem.TaskItems.Add(ts3);
+//TaskItem.TaskItems.Add(ts);
+//TaskItem.TaskItems.Add(ts1);
+//TaskItem.TaskItems.Add(ts2);
+//TaskItem.TaskItems.Add(ts3);
 
-TaskItem.Display();
-Console.WriteLine(" Enter the id to change");
-int id = Convert.ToInt32(Console.ReadLine());
-var status = TaskItem.TaskItems.Find(x => x.TaskId == id);
-if (status != null)
-{
-    status.IsCompleted = true;
-    Console.WriteLine("Status has been changed");
-}
-else
-    Console.WriteLine("id not found");
-Console.WriteLine("Enter the id to remove Task");
-int remove = Convert.ToInt32(Console.ReadLine());
-TaskItem.TaskItems.RemoveAll(x => x.TaskId == remove);
-Console.WriteLine("Task removed succeessfully");
+//TaskItem.Display();
+//Console.WriteLine(" Enter the id to change");
+//int id = Convert.ToInt32(Console.ReadLine());
+//var status = TaskItem.TaskItems.Find(x => x.TaskId == id);
+//if (status != null)
+//{
+//    status.IsCompleted = true;
+//    Console.WriteLine("Status has been changed");
+//}
+//else
+//    Console.WriteLine("id not found");
+//Console.WriteLine("Enter the id to remove Task");
+//int remove = Convert.ToInt32(Console.ReadLine());
+//TaskItem.TaskItems.RemoveAll(x => x.TaskId == remove);
+//Console.WriteLine("Task removed succeessfully");
 
-Console.WriteLine("Total Tasks Are");
-TaskItem.FilteringTask();
+//Console.WriteLine("Total Tasks Are");
+//TaskItem.FilteringTask();
 
 
 //Assignment -2 03-11-2023
+
+FamilyMember grandparent = new FamilyMember("Grandparent", 60);
+FamilyTree familyTree = new FamilyTree(grandparent);
+
+FamilyMember parent1 = new FamilyMember("Parent 1", 65);
+FamilyMember parent2 = new FamilyMember("Parent 2", 50);
+FamilyMember child1 = new FamilyMember("Child 1", 28);
+FamilyMember child2 = new FamilyMember("Child 2", 26);
+FamilyMember grandchild1 = new FamilyMember("Grandchild 1", 11);
+
+
+grandparent.AddChild(parent1);
+grandparent.AddChild(parent2);
+parent1.AddChild(child1);
+parent1.AddChild(child2);
+child1.AddChild(grandchild1);
+
+Console.WriteLine("Family Tree:");
+familyTree.DisplayFamilyTree();
 
 
 
