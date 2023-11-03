@@ -454,22 +454,58 @@ Console.WriteLine("Average score of " + student2.studentName + " " + "is" + " " 
 //Assignment -2 ---02-11-2023
 
 
-TourPackage package = new TourPackage(1, "Wayanad", "02-11-2025", 1300);
-TourPackage package1 = new TourPackage(2, "Ernakulam", "12-1-2024", 1400);
-TourPackage package2 = new TourPackage(3, "kannur", "12-12-2023", 1500);
+//TourPackage package = new TourPackage(1, "Wayanad", "02-11-2025", 1300);
+//TourPackage package1 = new TourPackage(2, "Ernakulam", "12-1-2024", 1400);
+//TourPackage package2 = new TourPackage(3, "kannur", "12-12-2023", 1500);
 
-TourPackage.tourPackages.Add(package1);
-TourPackage.tourPackages.Add(package2);
-TourPackage.tourPackages.Add(package);
+//TourPackage.tourPackages.Add(package1);
+//TourPackage.tourPackages.Add(package2);
+//TourPackage.tourPackages.Add(package);
 
 
-Thread thread = new Thread(TourPackage.HotelReservation);
+//Thread thread = new Thread(TourPackage.HotelReservation);
 
-Thread thread1 = new Thread(TourPackage.HotelReservation);
+//Thread thread1 = new Thread(TourPackage.HotelReservation);
 
-thread.Start();
-thread.Join();
-thread1.Start();
+//thread.Start();
+//thread.Join();
+//thread1.Start();
+
+
+
+//Assignment -1 03-11-2023
+TaskItem ts = new TaskItem(1, "Birthday", false);
+TaskItem ts1 = new TaskItem(2, "Game", true);
+TaskItem ts2 = new TaskItem(3, "gym", true);
+TaskItem ts3 = new TaskItem(4, "work", false);
+
+TaskItem.TaskItems.Add(ts);
+TaskItem.TaskItems.Add(ts1);
+TaskItem.TaskItems.Add(ts2);
+TaskItem.TaskItems.Add(ts3);
+
+TaskItem.Display();
+Console.WriteLine(" Enter the id to change");
+int id = Convert.ToInt32(Console.ReadLine());
+var status = TaskItem.TaskItems.Find(x => x.TaskId == id);
+if (status != null)
+{
+    status.IsCompleted = true;
+    Console.WriteLine("Status has been changed");
+}
+else
+    Console.WriteLine("id not found");
+Console.WriteLine("Enter the id to remove Task");
+int remove = Convert.ToInt32(Console.ReadLine());
+TaskItem.TaskItems.RemoveAll(x => x.TaskId == remove);
+Console.WriteLine("Task removed succeessfully");
+
+Console.WriteLine("Total Tasks Are");
+TaskItem.FilteringTask();
+
+
+//Assignment -2 03-11-2023
+
 
 
 
